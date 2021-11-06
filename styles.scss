@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+  background-image: url(./quiz_image.JPG);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.info_title{
+  text-align: center;
+  margin-right: 30px;
+}
+
+.info_list{
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+#start{
+    font-size:25px;
+    font-weight: bold;
+    margin-left: 230px;
+    margin-bottom: 20px;
+    padding:15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #52cedf;    
+}
+
+.start_class{
+  background-color: royalblue ;
+}
+
+.qa_box{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.qa_header{
+  
+    background-color: royalblue;
+    display: flex;
+    justify-content: space-between; 
+    padding: 15px;
+    font-size: 20px;
+}
+
+.quiz_header{
+  padding: 3rem;
+  background-color: #52cedf;
+}
+
+.quiz_header{
+    display: none;
+}
+
+.quiz_header.active{
+    display: block;
+}
+.color_class{
+  background-color: white;
+}
+
+.qa_ans_row input{
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 30px;
+}
+
+.qa_ans_row span{
+    text-align:center;
+    display: block;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+
+.qa_ans_row input[type="radio"]:checked + span{
+  background-color: red;
+  color: #fff;
+}
+
+.qa_ans_row input[valid]:checked + span{
+     background-color: green;
+     color: #fff;
+}
+
+h4{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.footer{
+  background-color: royalblue;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around; 
+  padding: 15px;
+  font-size: 20px;
+}
+
+#reload{
+  margin-left: 200px;
+  font-size: 15px ;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color:  rgb(204, 86, 204);;
+}
+
+button{
+    font-size: 15px ;
+    border-radius: 15px;
+    font-weight: bold;
+}
+button:hover{
+  background-color: #04adc4;
+}
+button:focus{
+  outline: none;
+  background-color: #44b927;
+}
+
+.score_class{
+  
+  animation: blinker 1s linear infinite;
+  color: rgb(209, 16, 209);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+  }
+
