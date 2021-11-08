@@ -8,8 +8,8 @@ var qaSet = document.querySelectorAll('.quiz_header');
 var ansRow = document.querySelectorAll('.quiz_header .qa_ans_row input');
 console.log(ansRow); // const submitBtn = document.getElementById('submit');
 
-var skipBtn = document.getElementById('skip');
-console.log(skipBtn);
+var skipBtn = document.getElementById('skip'); // console.log(skipBtn);
+
 var count = 0;
 var duration = 0;
 var scoreCount = 0; //skip button logic

@@ -7,7 +7,7 @@ let ansRow = document.querySelectorAll('.quiz_header .qa_ans_row input');
 console.log(ansRow);
 // const submitBtn = document.getElementById('submit');
 const skipBtn = document.getElementById('skip');
-console.log(skipBtn);
+// console.log(skipBtn);
 
 let count = 0;
 let duration = 0;  
